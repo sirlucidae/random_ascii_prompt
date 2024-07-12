@@ -1,1 +1,1 @@
-Shell script to be launched from bash rc or fish config. Picks a random ASCII string to display for every terminal prompt.
+Shell script to be called from bash rc or fish config. Picks a ASCII string at random to display with new terminal prompts.
