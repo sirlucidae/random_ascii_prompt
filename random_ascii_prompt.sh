@@ -7,12 +7,13 @@ BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-# $RANDOM returns a random number from 0 to 32767 inclusive
+# Returns a random number from 0 to 3.
 random_selection=$((RANDOM % 4))
 
+# Result picks one of these strings and prints it.
 case $random_selection in
 
-  0)
+  0) # Cow
   printf "${GREEN}  ^__^
   (..)\_______
   (__)\       )\/\\
@@ -20,7 +21,7 @@ case $random_selection in
       ||     ||\n${NC}"
   ;;
 
-  1)
+  1) # Mouse
   printf "${BLUE}      __
      /  \`
    __|__
@@ -31,14 +32,14 @@ case $random_selection in
     ^ ^\n${NC}"
   ;;
 
-  2)
+  2) # Cat
   printf "${YELLOW}         /\_/\\
     ____/ o o \\
   /~____  =ø= /
  (______)__m_m)\n${NC}"
   ;;
 
-  3)
+  3) # Bird
   printf "${RED}     .-.
     /'v'\\
    (/   \\)
