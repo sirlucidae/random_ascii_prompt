@@ -13,12 +13,11 @@ random_selection=$((RANDOM % 4))
 # Result picks one of these strings and prints it.
 case $random_selection in
 
-  0) # Cow
-  printf "${GREEN}  ^__^
-  (..)\_______
-  (__)\       )\/\\
-      ||----w |
-      ||     ||\n${NC}"
+  0) # Frog
+  printf "${GREEN}    @..@
+   (----)
+  ( >__< )
+  ^^    ^^\n${NC}"
   ;;
 
   1) # Mouse
@@ -33,16 +32,15 @@ case $random_selection in
   ;;
 
   2) # Cat
-  printf "${YELLOW}         /\_/\\
-    ____/ o o \\
-  /~____  =ø= /
- (______)__m_m)\n${NC}"
+  printf "${YELLOW}      (\_/)
+  (  =(^Y^)=
+   \_(m___m)\n${NC}"
   ;;
 
   3) # Bird
   printf "${RED}     .-.
-    /'v'\\
-   (/   \\)
+    /°v°\ 
+   (/   \)
   ='=\"=\"===<
      |_|\n${NC}"
   ;;
